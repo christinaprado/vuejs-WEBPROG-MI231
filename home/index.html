@@ -46,13 +46,8 @@
   </div>
 
   <div id="app2">
-    <p>Delicious Foods:</p>
-    <div>
-      <figure v-for="food in manyFoods" :key="food.name">
-        <img :src="food.url" :alt="food.name">
-        <figcaption>{{ food.name }}</figcaption>
-      </figure>
-    </div>
+    <p>Everything inside the div element with id="app2" can use data from the Vue instance.</p>
+    <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
   </div>  
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
