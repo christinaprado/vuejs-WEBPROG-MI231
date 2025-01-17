@@ -22,7 +22,7 @@
 
     <div id="experience" class="card">
       <h2>IT Experiences</h2>
-      <p>I first learned how to code using HTML when I was in 9th grade, and I kind've liked it, and that encouraged me to take IT.</p>
+      <p>I first learned how to code using HTML when I was in 9th grade, and I kind of liked it, and that encouraged me to take IT.</p>
     </div>
 
     <div id="hobbies" class="card">
@@ -33,27 +33,26 @@
     <div id="goals" class="card">
       <h2>Goals in Life/Dreams</h2>
       <p>As I look towards the future, my aspirations are to one day establish my own business, embark on adventures around the world, and to live a long, healthy, and stress-free life.</p>
-      </section>
-      <aside class="sidebar">
-        </aside>
-    </main>
-    <footer> Asia Pacific College   </footer>
+    </div>
   </div>
 
-<div id="app">
-  {{ message }} <br>
-  {{'Random number: ' + Math.ceil(Math.random()*6) }}
-  
-  <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
+  <footer>Asia Pacific College</footer>
 
-</div>
-    <div id="app2">
-  <p>Everything inside the div emelent with id="app" can use data from the Vue instance.</p>
-  <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div
+  <div id="app">
+    {{ message }} <br>
+    {{ 'Random number: ' + Math.ceil(Math.random() * 6) }}
     
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="js/vue.js"></script>
-<script src="js/images.js"></script>
+    <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
+  </div>
+
+  <div id="app2">
+    <p>Everything inside the div element with id="app2" can use data from the Vue instance.</p>
+    <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/images.js"></script>
 
 </body>
 </html>
