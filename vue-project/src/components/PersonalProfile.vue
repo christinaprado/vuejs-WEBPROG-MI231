@@ -1,4 +1,5 @@
 <template>
+    <div>
       <header>
         Christina Prado - Personal Profile
       </header>
@@ -25,7 +26,7 @@
   
         <div id="experience" class="card">
           <h2>IT Experiences</h2>
-          <p>I first learned how to code using HTML when I was in 9th grade, and I kind've liked it, and that encouraged me to take IT.</p>
+          <p>I first learned how to code using HTML when I was in 9th grade, and I kind of liked it, and that encouraged me to take IT.</p>
         </div>
   
         <div id="hobbies" class="card">
@@ -41,7 +42,7 @@
         <div id="resources" class="card">
           <h2>Resources</h2>
           <ul>
-            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
           </ul>
         </div>
       </div>
@@ -53,9 +54,13 @@
   </template>
   
   <style>
-  
   * {
-    body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: sans-serif;
     margin: 0;
     display: flex;
@@ -133,22 +138,6 @@
     font-size: 1.5rem;
   }
   
-  .photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .photo-gallery img {
-    width: 300px; 
-    height: auto; 
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  
   footer {
     text-align: center;
     margin-top: 20px;
@@ -156,5 +145,5 @@
     background-color: #bc5b5b;
     color: floralwhite;
   }
+  </style>
   
-  </style> 
