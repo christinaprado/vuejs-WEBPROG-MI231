@@ -1,5 +1,5 @@
 <template>
-    <div class="apple">
+    <div class="mango">
       <h2>{{ name }}</h2>
       <p>{{ message }}</p>
     </div>
@@ -10,20 +10,17 @@
     data() {
       return {
         name: 'Mangoes',
-        message: 'I like mangoes'
+        message: 'I like Mangoes'
       }
     }
   };
   </script>
   
   <style>
-
-#app > div {
+  .mango {
         border: dashed black 1px;
         display: inline-block;
         margin: 10px;
         padding: 10px;
         background-color: lightyellow;
-    }
-
-</style>
+    }</style>
