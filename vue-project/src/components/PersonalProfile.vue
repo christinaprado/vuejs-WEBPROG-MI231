@@ -1,4 +1,6 @@
 <template>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexbox-grid.css">
     <div class="container">
       <div id="about" class="card">
         <h2>About Me</h2>
@@ -27,73 +29,4 @@
     </div>
   
     <footer>Asia Pacific College</footer>
-  
-    <div id="app">
-      {{ message }} <br>
-      {{ 'Random number: ' + Math.ceil(Math.random() * 6) }}
-  
-      <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
-    </div>
-  
-    <div id="app2">
-      <p>Everything inside the div element with id="app2" can use data from the Vue instance.</p>
-      <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
-    </div>
-  
-    <link rel="stylesheet" href="css/shopping.css?version=0.1">
-  
-    <div id="app3">
-      <form v-on:submit.prevent="addItem">
-        <p>
-          What do you need? <br>
-          <input type="text" required placeholder="Item name..." v-model="itemName">
-        </p>
-        <p>
-          How many? <br>
-          <input type="number" placeholder="Number of items..." v-model="itemNumber">
-        </p>
-        <p>
-          Important?
-          <label>
-            <input type="checkbox" v-model="itemImportant">
-            {{ itemImportant }}
-          </label>
-        </p>
-        <button type="submit">Add item</button>
-      </form>
-  
-      <br>
-      <hr>
-  
-      <div>
-        <p><strong>Shopping list:</strong></p>
-  
-        <ul id="ulToFind">
-          <li
-            v-for="item in shoppingList"
-            v-bind:class="{ impClass: item.important }"
-            v-on:click="item.found = !item.found"
-            v-show="!item.found"
-          >
-            {{ item.name }}, {{ item.number }}
-          </li>
-        </ul>
-  
-        <ul id="ulFound">
-          <li
-            v-for="item in shoppingList"
-            v-bind:class="{ impClass: item.important }"
-            v-on:click="item.found = !item.found"
-            v-show="item.found"
-          >
-            {{ item.name }}, {{ item.number }}
-          </li>
-        </ul>
-      </div>
-    </div>
-  
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="js/vue.js"></script>
-    <script src="js/images.js"></script>
-    <script src="js/shoppinglist.js"></script>
   </template>
