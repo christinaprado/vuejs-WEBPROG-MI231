@@ -1,12 +1,17 @@
 <template>
-  <food-item/> <br>
-  <food-item2/> <br>
-  <food-item/> <br>
-  <personal-profile/> <br>
-  
+  <div class="flex flex-col"> 
+    <food-item />
+    <food-item2 />
+    <food-item3 />
+    <personal-profile />
+  </div>
 </template>
 
-<script></script>
-
-<style>
-</style>   
+<style scoped>
+.flex-col {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+</style>
