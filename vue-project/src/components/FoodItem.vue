@@ -23,7 +23,7 @@
         display: inline-block;
         margin: 10px;
         padding: 10px;
-        background-color: rgb(255, 97, 97);
+        background-color: rgb(250, 0, 0);
     }
 
 </style>

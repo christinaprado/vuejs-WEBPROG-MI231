@@ -1,5 +1,5 @@
 <template>
-    <div class="grapes">
+    <div class="grape"> 
       <h2>{{ name }}</h2>
       <p>{{ message }}</p>
     </div>
@@ -16,12 +16,12 @@
   };
   </script>
   
-  <style>
-  
-  .grape {
-        border: dashed rgb(255, 255, 255) 1px;
-        display: inline-block;
-        margin: 10px;
-        padding: 10px;
-        background-color: rgb(191, 113, 255);
-    }</style>
+  <style scoped>
+    .grape {
+          border: dashed rgb(255, 255, 255) 1px;
+          display: inline-block;
+          margin: 10px;
+          padding: 10px;
+          background-color: rgb(140, 0, 255);
+      }
+  </style>
