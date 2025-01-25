@@ -17,7 +17,7 @@
   </script>
   
   <style>
-  .mango {
+  .blueberry {
         border: dashed white 1px;
         display: inline-block;
         margin: 10px;
