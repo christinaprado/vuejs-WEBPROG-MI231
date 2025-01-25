@@ -18,7 +18,7 @@
   
   <style>
 
-.apple {
+#app > div {
         border: dashed black 1px;
         display: inline-block;
         margin: 10px;
