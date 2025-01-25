@@ -58,11 +58,10 @@
   </div>
 </template>
 
-<style scoped>
-  /* Your CSS styles here */
-</style>
+<style>
 
-body {
+* {
+  body {
   font-family: sans-serif;
   margin: 0;
   display: flex;
@@ -115,3 +114,5 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+</style>
