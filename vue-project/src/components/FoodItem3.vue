@@ -22,6 +22,6 @@
           display: inline-block;
           margin: 10px;
           padding: 10px;
-          background-color: rgb(74, 5, 131);
+          background-color: rgb(190, 113, 253);
       }
   </style>
