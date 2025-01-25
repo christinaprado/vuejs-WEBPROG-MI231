@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My first Vue page</title>
+ <title>My first Vue page</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/flexbox-grid.css">
   <link rel="stylesheet" href="css/pink.css">
@@ -109,5 +106,3 @@
   <script src="js/images.js"></script>
   <script src="js/shoppinglist.js"></script>
 
-</body>
-</html>
