@@ -114,5 +114,53 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
 
-</style>
+.card {
+  background-color: #dd7e7ee6;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-gallery img {
+  width: 300px; 
+  height: auto; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #bc5b5b;
+  color: floralwhite;
+}
+
+</style> 
