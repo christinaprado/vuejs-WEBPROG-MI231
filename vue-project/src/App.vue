@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col"> 
+  <div class="container"> 
     <food-item />
     <food-item2 />
     <food-item3 />
@@ -8,10 +8,13 @@
 </template>
 
 <style scoped>
-.flex-col {
+.container {
   display: flex;
   flex-direction: column; 
-  justify-content: center; 
-  align-items: center;
+  align-items: center; 
+}
+
+.container * { 
+  color: white; 
 }
 </style>
