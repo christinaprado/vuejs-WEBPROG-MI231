@@ -26,20 +26,18 @@
 }
 </style>
 
-<script setup>
-import { ref, onMounted } from 'vue'
-import { supabase } from './lib/supabaseClient'
-import FoodItem from './components/FoodItem.vue'
-import FoodItem2 from './components/FoodItem2.vue'
-import FoodItem3 from './components/FoodItem3.vue'
-import PersonalProfile from './components/PersonalProfile.vue'
+ <script setup>
+  import { ref, onMounted } from 'vue'
+  import { supabase } from './lib/supabaseClient'
 
-const countries = ref([])
+  const countries = ref([])
 
-onMounted(() => {
-  supabase
-    .from('countries')
-    .select()
-    .then(({ data }) => (countries.value = data))
-})
-</script>
+  async function getCountries() {
+    const { data } = await supabase.from('countries').select()
+    countries.value = data
+  }
+
+  onMounted(() => {
+    getCountries()
+  })
+  </script>
