@@ -3,12 +3,14 @@
     <ul>
       <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
     </ul>
-    <div class="content">
-      <FoodItem />
-      <FoodItem2 />
-      <FoodItem3 />
+
+    <div class="content-section">
+      <FoodItem /> 
+      <FoodItem2 /> 
+      <FoodItem3 /> 
     </div>
-    <PersonalProfile />
+
+    <PersonalProfile /> 
   </div>
 </template>
 
@@ -18,26 +20,36 @@
   flex-direction: column;
   align-items: center;
 }
-.content {
+
+.content-section {
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  margin-bottom: 1rem;
+  width: 80%; 
+  margin-bottom: 20px; 
+}
+
+.container * {
+  color: white;
 }
 </style>
 
- <script setup>
-  import { ref, onMounted } from 'vue'
-  import { supabase } from './lib/supabaseClient'
+<script setup>
+import { ref, onMounted } from 'vue'
+import { supabase } from './lib/supabaseClient'
 
-  const countries = ref([])
+import FoodItem from './components/FoodItem.vue'; 
+import FoodItem2 from './components/FoodItem2.vue'; 
+import FoodItem3 from './components/FoodItem3.vue'; 
+import PersonalProfile from './components/PersonalProfile.vue'; 
 
-  async function getCountries() {
-    const { data } = await supabase.from('countries').select()
-    countries.value = data
-  }
+const countries = ref([])
 
-  onMounted(() => {
-    getCountries()
-  })
-  </script>
+async function getCountries() {
+  const { data } = await supabase.from('countries').select()
+  countries.value = data
+}
+
+onMounted(() => {
+  getCountries()
+})
+</script>
