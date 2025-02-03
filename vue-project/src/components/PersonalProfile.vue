@@ -1,75 +1,70 @@
 <template>
-  <div class="profile-container">
-    <div class="fruit-bar">
-      <div class="fruit-item" style="background-color: #FFC0CB;">Apples</div>
-      <div class="fruit-item" style="background-color: #ADD8E6;">Blueberries</div>
-      <div class="fruit-item" style="background-color: #E6E6FA;">Grapes</div>
-    </div>
+  <div>
+    <!-- Header Section -->
+    <header>
+      Christina Prado - Personal Profile
+    </header>
 
-    <div class="profile-content">
-      <div class="profile-header">
-        <div class="profile-title">Christina Prado - Personal Profile</div>
-        <nav>
-          <a href="#about">About Me</a>
-          <a href="#education">Education</a>
-          <a href="#experience">IT Experiences</a>
-          <a href="#hobbies">Hobbies</a>
-          <a href="#goals">Goals</a>
-          <a href="#resources">Resources</a>
-        </nav>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#experience">IT Experiences</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#goals">Goals</a>
+      <a href="#resources">Resources</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- About Me -->
+      <div id="about" class="card">
+        <h2>About Me</h2>
+        <p>Hi! My name is Christina Prado, I am a second-year college student in Asia Pacific College taking the course BSIT-MI. I have five dogs and I love listening to music.</p>
       </div>
 
-      <div class="container">
-        <div class="profile-cards">
-          <div class="card">
-            <div class="card-title">About Me</div> <div class="card-content">
-              Hi! My name is Christina Prado, I am a second-year college student in Asia Pacific College taking the course BSIT-MI. I have five dogs and I love listening to music.
-            </div>
-          </div>
+      <!-- Education -->
+      <div id="education" class="card">
+        <h2>Education & Achievements</h2>
+        <p>BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
+      </div>
 
-          <div class="card">
-            <div class="card-title">Education & Achievements</div> <div class="card-content">
-              BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies
-            </div>
-          </div>
+      <!-- IT Experience -->
+      <div id="experience" class="card">
+        <h2>IT Experiences</h2>
+        <p>I first learned how to code using HTML when I was in 9th grade, and I kind of liked it, and that encouraged me to take IT.</p>
+      </div>
 
-          <div class="card">
-            <div class="card-title">IT Experiences</div> <div class="card-content">
-              I first learned how to code using HTML when I was in 9th grade, and I kind of liked it, and that encouraged me to take IT.
-            </div>
-          </div>
+      <!-- Hobbies -->
+      <div id="hobbies" class="card">
+        <h2>Hobbies & Interests</h2>
+        <p>I enjoy exploring new places through walking and eating out with friends. I find satisfaction and peace in a clean and organized room, and spending quality time with my beloved furbabies brings me immense joy.</p>
+      </div>
 
-          <div class="card">
-            <div class="card-title">Hobbies & Interests</div> <div class="card-content">
-              I enjoy exploring new places through walking and eating out with friends. I find satisfaction and peace in a clean and organized room, and spending quality time with my beloved furbabies brings me immense joy.
-            </div>
-          </div>
+      <!-- Goals -->
+      <div id="goals" class="card">
+        <h2>Goals in Life/Dreams</h2>
+        <p>As I look towards the future, my aspirations are to one day establish my own business, embark on adventures around the world, and to live a long, healthy, and stress-free life.</p>
+      </div>
 
-          <div class="card">
-            <div class="card-title">Goals in Life/Dreams</div> <div class="card-content">
-              As I look towards the future, my aspirations are to one day establish my own business, embark on adventures around the world, and to live a long, healthy, and stress-free life.
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-title">Resources</div> <div class="card-content">
-              <ul>
-                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <!-- Resources -->
+      <div id="resources" class="card">
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        </ul>
       </div>
     </div>
 
-    <div class="profile-footer">
+    <!-- Footer -->
+    <footer>
       &copy; 2025 Christina Prado. All Rights Reserved.
-    </div>
+    </footer>
   </div>
 </template>
 
-<style scoped>
-/*  General Styles  */
+<style>
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -77,7 +72,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Arial", sans-serif; /* Ensure a valid font */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -85,25 +80,25 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: #ffb5c0; /* Light pink background */
+  background-color: rgba(255, 255, 255, 0.9); /* Corrected transparency */
 }
 
-/*  Header Styles  */
+/* Header */
 header {
-  background-color: #4c0000; /* Dark red/maroon header */
-  color: floralwhite;
+  background-color: #800020;
+  color: #fffcef;
   padding: 20px;
   text-align: center;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 5px #eb99994d, 0 6px 15px #ea969633;
+  box-shadow: 0 4px 5px rgba(235, 153, 153, 0.3), 0 6px 15px rgba(234, 150, 150, 0.2);
 }
 
-/*  Navigation Styles  */
+/* Navigation Bar */
 nav {
-  background-color: rgba(167, 98, 98, 0.8); /* Semi-transparent maroon nav */
+  background-color: rgba(167, 98, 98, 0.8);
   color: white;
   padding: 10px;
   display: flex;
@@ -113,11 +108,12 @@ nav {
   position: sticky;
   top: 60px;
   z-index: 999;
+  backdrop-filter: blur(5px);
 }
 
 nav a {
   color: white;
-  text-decoration: none;
+  text-decoration: none; /* Fixed invalid text-decoration */
   padding: 5px 10px;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -127,14 +123,7 @@ nav a:hover {
   color: #ffb5c0;
 }
 
-/*  Main Content Container Styles  */
-.profile-content {
-  width: 100%; /* Full width for the content area */
-  padding: 20px; /* Add some padding */
-}
-
-
-/*  Card Container Styles  */
+/* Main Content */
 .container {
   display: flex;
   flex-direction: column;
@@ -143,34 +132,34 @@ nav a:hover {
   margin: 0 auto;
 }
 
-/*  Card Styles  */
+/* Card Styles */
 .card {
-  background-color: #4c0000; /* Dark red/maroon cards */
+  background-color: #800020;
   border-radius: 20px;
   padding: 20px;
   margin: 15px;
   text-align: center;
   width: 80%;
-  box-shadow: 0 4px 10px rgba(255, 252, 239);
+  box-shadow: 0 4px 10px rgba(255, 252, 239, 0.5);
   color: #fff;
 }
 
-.card .card-title { /* Card Title Styles */
+.card h2 {
   margin-bottom: 10px;
   font-size: 2rem;
 }
 
-.card .card-content { /* Card Content Styles */
+.card p {
   margin: 0;
   font-size: 1.5rem;
 }
 
-/*  Footer Styles  */
+/* Footer */
 footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background-color: #4c0000; /* Dark red/maroon footer */
-  color: floralwhite;
+  background-color: #800020;
+  color: #fffcef;
 }
 </style>
