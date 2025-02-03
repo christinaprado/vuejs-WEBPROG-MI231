@@ -8,24 +8,22 @@
 }
 
 @font-face {
-font-family: 'Alice'; /* Name for the Alice font */
-src: url('fonts/Alice-Regular.woff2') format('woff2'), /* Path to WOFF2 */
-     url('fonts/Alice-Regular.woff') format('woff'),   /* Path to WOFF */
-     url('fonts/Alice-Regular.ttf') format('truetype'); /* Path to TTF (fallback) */
-font-weight: normal;  /* Or use a specific weight if available */
-font-style: normal; /* Or italic if available */
+  font-family: 'Alice';
+  src: url('fonts/Alice-Regular.woff2') format('woff2'),
+       url('fonts/Alice-Regular.woff') format('woff'),
+       url('fonts/Alice-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-font-family: 'Altesse', 'Alice', sans-serif; /* Altesse first, then Alice, then sans-serif */
+  font-family: 'Altesse', 'Alice', sans-serif; /* Altesse first, then Alice, then sans-serif */
 }
 
-/* Example of how to use Alice for a specific element */
-h1 {
-font-family: 'Alice', sans-serif;
+h2 {
+  font-family: 'Altesse'; /* Altesse for h2 headings */
 }
 
-/* Or apply it to a class */
-.alice-font {
-font-family: 'Alice', sans-serif;
+p {
+  font-family: 'Alice'; /* Alice for paragraphs */
 }
