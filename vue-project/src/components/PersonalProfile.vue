@@ -69,7 +69,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #fffff0;
+    background-color: #ffffffa;
   }
   
   header {
