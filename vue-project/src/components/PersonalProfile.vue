@@ -66,7 +66,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif; /* Ensure a valid font */
+  font-family: "Arial", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.9); /* Corrected transparency */
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Header */
@@ -88,6 +88,8 @@ header {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 5px rgba(235, 153, 153, 0.3), 0 6px 15px rgba(234, 150, 150, 0.2);
+  font-family: "Brush Script MT", cursive;
+  font-size: 3rem;
 }
 
 /* Navigation Bar */
@@ -103,13 +105,14 @@ nav {
   top: 60px;
   z-index: 999;
   backdrop-filter: blur(5px);
+  font-family: Garamond, serif;
+  font-size: 1.2rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
-  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
@@ -141,15 +144,15 @@ nav a:hover {
 /* Card Title Styling */
 .card h2 {
   margin-bottom: 10px;
-  font-size: 2rem;
-  font-family: "Brush Script MT", cursive; /* Brush Script for titles */
+  font-size: 3rem;
+  font-family: "Brush Script MT", cursive;
 }
 
 /* Card Content Styling */
 .card p {
   margin: 0;
-  font-size: 1.5rem;
-  font-family: Arial, sans-serif; /* Arial for paragraphs */
+  font-size: 1rem;
+  font-family: Garamond, serif;
 }
 
 /* Footer */
