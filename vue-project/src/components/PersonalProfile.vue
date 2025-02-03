@@ -54,23 +54,11 @@
 </template>
 
 <style>
-/* Font Definitions (MUST be at the top) */
-@font-face {
-  font-family: 'Altesse';
-  src: url('fonts/Altesse-Regular.woff2') format('woff2'),
-       url('fonts/Altesse-Regular.woff') format('woff'),
-       url('fonts/Altesse-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Alice';
-  src: url('fonts/Alice-Regular.woff2') format('woff2'),
-       url('fonts/Alice-Regular.woff') format('woff'),
-       url('fonts/Alice-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Altesse&family=Playwrite+IN+Guides&display=swap" rel="stylesheet">
+  </head>
 }
 
 /* General Styles */

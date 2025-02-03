@@ -7,23 +7,14 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Alice';
-  src: url('fonts/Alice-Regular.woff2') format('woff2'),
-       url('fonts/Alice-Regular.woff') format('woff'),
-       url('fonts/Alice-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: 'Altesse', 'Alice', sans-serif; /* Altesse first, then Alice, then sans-serif */
+  font-family: 'Altesse', 'Playwrite IN Guides', 'Roboto', sans-serif; /* Corrected: Added Roboto fallback */
 }
 
 h2 {
-  font-family: 'Altesse'; /* Altesse for h2 headings */
+  font-family: 'Altesse';
 }
 
 p {
-  font-family: 'Alice'; /* Alice for paragraphs */
+  font-family: 'Playwrite IN Guides';
 }
