@@ -17,37 +17,31 @@
 
     <!-- Main Content -->
     <div class="container">
-      <!-- About Me -->
       <div id="about" class="card">
         <h2>About Me</h2>
         <p>Hi! My name is Christina Prado, I am a second-year college student in Asia Pacific College taking the course BSIT-MI. I have five dogs and I love listening to music.</p>
       </div>
 
-      <!-- Education -->
       <div id="education" class="card">
         <h2>Education & Achievements</h2>
         <p>BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
       </div>
 
-      <!-- IT Experience -->
       <div id="experience" class="card">
         <h2>IT Experiences</h2>
         <p>I first learned how to code using HTML when I was in 9th grade, and I kind of liked it, and that encouraged me to take IT.</p>
       </div>
 
-      <!-- Hobbies -->
       <div id="hobbies" class="card">
         <h2>Hobbies & Interests</h2>
         <p>I enjoy exploring new places through walking and eating out with friends. I find satisfaction and peace in a clean and organized room, and spending quality time with my beloved furbabies brings me immense joy.</p>
       </div>
 
-      <!-- Goals -->
       <div id="goals" class="card">
         <h2>Goals in Life/Dreams</h2>
         <p>As I look towards the future, my aspirations are to one day establish my own business, embark on adventures around the world, and to live a long, healthy, and stress-free life.</p>
       </div>
 
-      <!-- Resources -->
       <div id="resources" class="card">
         <h2>Resources</h2>
         <ul>
@@ -63,7 +57,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 /* General Styles */
 * {
   margin: 0;
@@ -113,7 +107,7 @@ nav {
 
 nav a {
   color: white;
-  text-decoration: none; /* Fixed invalid text-decoration */
+  text-decoration: none;
   padding: 5px 10px;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -144,14 +138,18 @@ nav a:hover {
   color: #fff;
 }
 
+/* Card Title Styling */
 .card h2 {
   margin-bottom: 10px;
   font-size: 2rem;
+  font-family: "Brush Script MT", cursive; /* Brush Script for titles */
 }
 
+/* Card Content Styling */
 .card p {
   margin: 0;
   font-size: 1.5rem;
+  font-family: Arial, sans-serif; /* Arial for paragraphs */
 }
 
 /* Footer */
