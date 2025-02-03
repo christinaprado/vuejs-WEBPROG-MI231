@@ -73,7 +73,7 @@
   }
   
   header {
-    background-color: #2B5288;
+    background-color: #fffff0;
     color: #fffcef;
     padding: 20px;
     text-align: center;
@@ -118,7 +118,7 @@
   }
   
   .card {
-    background-color: #2B5288;
+    background-color: #800020;
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
@@ -142,7 +142,7 @@
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #2B5288;
+    background-color: #800020;
     color: #fffcef;
   }
   </style>
