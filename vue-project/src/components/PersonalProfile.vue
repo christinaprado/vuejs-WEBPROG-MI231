@@ -1,13 +1,8 @@
 <template>
-  <div :class="{ dark: isDarkMode }">
-    <!-- Dark Mode Toggle -->
-    <button @click="toggleDarkMode" class="dark-mode-toggle">
-      {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
-    </button>
-    
+  <div>
     <!-- Header Section -->
     <header>
-      Christina Prado - Personal Profile
+      Christina Prado
     </header>
 
     <!-- Navigation Bar -->
@@ -62,21 +57,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isDarkMode: false,
-    };
-  },
-  methods: {
-    toggleDarkMode() {
-      this.isDarkMode = !this.isDarkMode;
-    },
-  },
-};
-</script>
-
 <style scoped>
 /* General Styles */
 * {
@@ -95,32 +75,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-color: rgba(255, 255, 255, 0.9);
-}
-
-/* Dark Mode Styles */
-.dark {
-  background-color: #121212;
-  color: #fff;
-}
-
-.dark .card {
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
-}
-
-/* Dark Mode Toggle Button */
-.dark-mode-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  background-color: #800020;
-  color: white;
-  font-size: 1rem;
-  border-radius: 5px;
 }
 
 /* Header */
@@ -164,6 +118,27 @@ nav a {
 
 nav a:hover {
   color: #ffb5c0;
+}
+
+/* Main Content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+  background-color: #800020;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(255, 252, 239, 0.5);
+  color: #fff;
 }
 
 /* Card Title Styling */
