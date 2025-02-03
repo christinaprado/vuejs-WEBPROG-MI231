@@ -81,7 +81,7 @@
 }
 
 body {
-  font-family: 'Altesse', 'Alice', sans-serif; /* Apply fonts, fallback to sans-serif */
+  font-family: 'Altesse', 'Alice'; /* Apply fonts, fallback to sans-serif */
   margin: 0;
   display: flex;
   flex-direction: column;
