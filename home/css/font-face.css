@@ -1,3 +1,4 @@
+/* Font Definitions (If you have local fonts like Altesse) */
 @font-face {
   font-family: 'Altesse';
   src: url('fonts/Altesse-Regular.woff2') format('woff2'),
@@ -7,14 +8,16 @@
   font-style: normal;
 }
 
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Altesse', 'Playwrite IN Guides', 'Roboto', sans-serif; /* Corrected: Added Roboto fallback */
+  font-family: 'Altesse', 'Playwrite IN Guides', sans-serif; /* Use correct font name */
+  /* ... rest of your body styles ... */
 }
 
-h2 {
-  font-family: 'Altesse';
-}
-
-p {
-  font-family: 'Playwrite IN Guides';
-}
+/* ... rest of your CSS styles */
