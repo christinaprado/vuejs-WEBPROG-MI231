@@ -79,8 +79,8 @@ body {
 
 /* Header */
 header {
-  background-color: #800020;
-  color: #fffcef;
+  background-color: #fffcef;
+  color: #800020;
   padding: 20px;
   text-align: center;
   position: sticky;
@@ -95,7 +95,7 @@ header {
 /* Navigation Bar */
 nav {
   background-color: rgba(167, 98, 98, 0.8);
-  color: white;
+  color: #800020;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -131,14 +131,14 @@ nav a:hover {
 
 /* Card Styles */
 .card {
-  background-color: #800020;
+  background-color: #fffcef;
   border-radius: 20px;
   padding: 20px;
   margin: 15px;
   text-align: center;
   width: 80%;
   box-shadow: 0 4px 10px rgba(255, 252, 239, 0.5);
-  color: #fff;
+  color: #800020;
 }
 
 /* Card Title Styling */
@@ -160,7 +160,7 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background-color: #800020;
-  color: #fffcef;
+  background-color: #fffcef;
+  color: #800020;
 }
 </style>
