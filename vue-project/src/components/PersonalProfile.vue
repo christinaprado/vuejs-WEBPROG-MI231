@@ -1,3 +1,10 @@
+body {
+  background: linear-gradient(135deg, #800020, #FFFFFFA, #800020, #FFFFFFA, #800020);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 <template>
   <div>
     <!-- Header Section -->
@@ -51,9 +58,9 @@
     <!-- Footer -->
     <footer>&copy; 2025 Christina Prado. All Rights Reserved.</footer>
   </div>
-</template>
-
-<style>
+  </template>
+  
+  <style>
   * {
     margin: 0;
     padding: 0;
@@ -65,7 +72,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(135deg, #5b2544, #7d586b, #612c48, #5c2743, #633850);
+    background: linear-gradient(135deg, #800020, #FFFFFFA, #800020, #FFFFFFA, #800020);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -148,4 +155,4 @@
     background-color: #800020;
     color: #fffcef;
   }
-</style>
+  </style>
