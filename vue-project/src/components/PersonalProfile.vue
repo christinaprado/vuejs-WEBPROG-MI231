@@ -73,8 +73,8 @@
   }
   
   header {
-    background-color: #4c0000;
-    color: floralwhite;
+    background-color: #2b5288;
+    color: #fffcef;
     padding: 20px;
     text-align: center;
     position: sticky;
@@ -99,7 +99,7 @@
   
   nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: altesse;
     padding: 5px 10px;
     font-size: 1rem;
     transition: color 0.3s ease;
@@ -118,7 +118,7 @@
   }
   
   .card {
-    background-color: #4c0000;
+    background-color: #2b5288;
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
@@ -142,8 +142,8 @@
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #4c0000;
-    color: floralwhite;
+    background-color: #2b5288;
+    color: #fffcef;
   }
   </style>
   
