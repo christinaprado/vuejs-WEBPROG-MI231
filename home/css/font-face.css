@@ -1,12 +1,31 @@
 @font-face {
-    font-family: 'Altesse'; /* Give it a name you'll use in your CSS */
-    src: url('fonts/Altesse-Regular.woff2') format('woff2'), /* Path to WOFF2 */
-         url('fonts/Altesse-Regular.woff') format('woff'),   /* Path to WOFF */
-         url('fonts/Altesse-Regular.ttf') format('truetype'); /* Path to TTF (fallback) */
-    font-weight: normal; /* Or bold, etc. if you have other weights */
-    font-style: normal; /* Or italic, etc. */
-  }
-  
-  body {
-    font-family: 'Altesse', sans-serif; /* Use the font, fallback to sans-serif */
-  }
+  font-family: 'Altesse';
+  src: url('fonts/Altesse-Regular.woff2') format('woff2'),
+       url('fonts/Altesse-Regular.woff') format('woff'),
+       url('fonts/Altesse-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'Alice'; /* Name for the Alice font */
+src: url('fonts/Alice-Regular.woff2') format('woff2'), /* Path to WOFF2 */
+     url('fonts/Alice-Regular.woff') format('woff'),   /* Path to WOFF */
+     url('fonts/Alice-Regular.ttf') format('truetype'); /* Path to TTF (fallback) */
+font-weight: normal;  /* Or use a specific weight if available */
+font-style: normal; /* Or italic if available */
+}
+
+body {
+font-family: 'Altesse', 'Alice', sans-serif; /* Altesse first, then Alice, then sans-serif */
+}
+
+/* Example of how to use Alice for a specific element */
+h1 {
+font-family: 'Alice', sans-serif;
+}
+
+/* Or apply it to a class */
+.alice-font {
+font-family: 'Alice', sans-serif;
+}
