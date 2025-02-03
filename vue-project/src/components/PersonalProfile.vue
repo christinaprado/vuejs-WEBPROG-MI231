@@ -118,7 +118,7 @@
   }
   
   .card {
-    background-color: #dd7e7ee6;
+    background-color: #ffffffa;
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
@@ -142,7 +142,7 @@
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #bc5b5b;
+    background-color: #80020;
     color: floralwhite;
   }
   </style>
