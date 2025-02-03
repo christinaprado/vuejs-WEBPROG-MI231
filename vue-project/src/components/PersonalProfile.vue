@@ -85,7 +85,7 @@
   }
   
   nav {
-    background-color: rgba(167, 98, 98, 0.8);
+    background-color: #800020;
     color: white;
     padding: 10px;
     display: flex;
@@ -106,7 +106,7 @@
   }
   
   nav a:hover {
-    color: #ffb5c0;
+    color: #800020;
   }
   
   .container {
@@ -118,7 +118,7 @@
   }
   
   .card {
-    background-color: #ffffffa;
+    background-color: #fffffa;
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
@@ -142,7 +142,7 @@
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #80020;
+    background-color: #800020;
     color: floralwhite;
   }
   </style>
