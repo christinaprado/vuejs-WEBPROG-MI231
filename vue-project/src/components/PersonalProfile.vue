@@ -73,7 +73,7 @@
   }
   
   header {
-    background-color: #bc5b5b;
+    background-color: #4c0000;
     color: floralwhite;
     padding: 20px;
     text-align: center;
@@ -118,13 +118,13 @@
   }
   
   .card {
-    background-color: #dd7e7ee6;
+    background-color: #4c0000;
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
     text-align: center;
     width: 80%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(255, 252, 239);
     color: #fff;
   }
   
@@ -142,7 +142,7 @@
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #bc5b5b;
+    background-color: #4c0000;
     color: floralwhite;
   }
   </style>
