@@ -1,10 +1,3 @@
-body {
-  background: linear-gradient(135deg, #800020, #FFFFFFA, #800020, #FFFFFFA, #800020);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 <template>
   <div>
     <!-- Header Section -->
@@ -62,6 +55,15 @@ body {
   
   <style>
   * {
+
+    body {
+  background: linear-gradient(135deg, #800020, #FFFFFFA, #800020, #FFFFFFA, #800020);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
