@@ -57,7 +57,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 /* General Styles */
 * {
   margin: 0;
