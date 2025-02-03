@@ -53,7 +53,7 @@
   </div>
   </template>
   
-  <style>
+  <style scoped>
   * {
     margin: 0;
     padding: 0;
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(to top right, #450028, #24000B, #690022, #881F2B, #D6A7BA);
+    background: linear-gradient(135deg, #24000B, #450028, #690022, #881F2B, #D6A7BA);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -149,3 +149,4 @@
     color: #fffcef;
   }
   </style>
+  
