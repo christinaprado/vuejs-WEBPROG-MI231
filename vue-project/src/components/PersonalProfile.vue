@@ -69,19 +69,19 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #ffb5c0;
+    background-color: #FFFFFF;
   }
   
   header {
-    background-color: ##800020;
-    color: floralwhite;
+    background-color: #800020;
+    color: #FFFFFF;
     padding: 20px;
     text-align: center;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 5px #eb99994d, 0 6px 15px #ea969633;
+    box-shadow: 0 4px 5px #800020, 0 6px 15px #800020;
   }
   
   nav {
@@ -118,7 +118,7 @@
   }
   
   .card {
-    background-color: #fffffa;
+    background-color: #FFFFFF;
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
