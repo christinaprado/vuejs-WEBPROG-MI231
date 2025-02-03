@@ -61,15 +61,11 @@
   }
   
   body {
-    font-family: "Arial", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #24000B, #450028, #690022, #881F2B, #D6A7BA);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
+  background: linear-gradient(135deg, #5b2544, #7d586b, #612c48, #5c2743, #633850);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
   
   header {
     background-color: #800020;
