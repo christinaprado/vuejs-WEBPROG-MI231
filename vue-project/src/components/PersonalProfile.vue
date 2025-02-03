@@ -69,11 +69,11 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #2B5288;
+    background-color: #fffff0;
   }
   
   header {
-    background-color: #fffff0;
+    background-color: #800020;
     color: #fffcef;
     padding: 20px;
     text-align: center;
