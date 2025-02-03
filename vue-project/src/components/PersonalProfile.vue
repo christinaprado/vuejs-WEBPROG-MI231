@@ -51,110 +51,101 @@
     <!-- Footer -->
     <footer>&copy; 2025 Christina Prado. All Rights Reserved.</footer>
   </div>
-  </template>
-  
-  <style>
-  * {
+</template>
 
-    body {
-  background: linear-gradient(135deg, #800020, #FFFFFFA, #800020, #FFFFFFA, #800020);
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b33951, #d6758c, #e9a6b4, #f2d4d9, #ffffff);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  
 }
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Arial", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #800020, #FFFFFFA, #800020, #FFFFFFA, #800020);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  
-  header {
-    background-color: #800020;
-    color: #fffcef;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    font-family: "Brush Script MT", cursive;
-    font-size: 3rem;
-  }
-  
-  nav {
-    background-color: rgba(167, 98, 98, 0.8);
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: sticky;
-    top: 60px;
-    z-index: 999;
-    backdrop-filter: blur(5px);
-    font-family: Garamond, serif;
-    font-size: 1.2rem;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #ffb5c0;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .card {
-    background-color: #800020;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 15px;
-    text-align: center;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(255, 252, 239, 0.5);
-    color: #fff;
-  }
-  
-  .card h2 {
-    margin-bottom: 10px;
-    font-size: 3rem;
-    font-family: "Brush Script MT", cursive;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    font-family: Garamond, serif;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #800020;
-    color: #fffcef;
-  }
-  </style>
+header {
+  background-color: #800020;
+  color: #fffcef;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: "Brush Script MT", cursive;
+  font-size: 3rem;
+}
+
+nav {
+  background-color: rgba(167, 98, 98, 0.8);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  font-family: Garamond, serif;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffb5c0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #800020;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(255, 252, 239, 0.5);
+  color: #fff;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-family: "Brush Script MT", cursive;
+}
+
+.card p {
+  font-size: 1rem;
+  font-family: Garamond, serif;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #800020;
+  color: #fffcef;
+}
+</style>
