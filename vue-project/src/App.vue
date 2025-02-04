@@ -1,13 +1,13 @@
 <template>
   <country/>
 
-    <div class="content-section"> 
-      <food-item /> 
-      <food-item2 /> 
-      <food-item3 /> 
-    </div> 
+  <div class="content-section"> 
+    <food-item /> 
+    <food-item2 /> 
+    <food-item3 /> 
+  </div> 
 
-    <personal-profile /> 
+  <personal-profile/> 
 </template>
 
 <style scoped> 
