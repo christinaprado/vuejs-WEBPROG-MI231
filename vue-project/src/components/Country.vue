@@ -37,11 +37,12 @@
     max-width: 400px;
   }
   
-  .food-title { /* New class for h2 */
-    font-size: 2rem;
-    font-weight: bold;
-    color: white; /* This makes the text white */
-    text-align: center;
+  .food-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white !important; /* Force color change */
+  text-align: center;
+
   }
   
   .country-list {
