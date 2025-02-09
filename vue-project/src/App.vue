@@ -1,30 +1,34 @@
 <template>
-  <country/>
-
-  <div class="content-section"> 
-    <food-item /> 
-    <food-item2 /> 
-    <food-item3 /> 
-  </div> 
-
-  <personal-profile/> 
+  <h1>Food</h1>
+  <ul>
+      <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
+    </ul>
+   <br>
+  <personal-profile/> <br>
+  <food-item/> 
+  <food-item2/> 
+  <food-item/> 
+  
 </template>
 
-<style scoped> 
- .container { 
-   display: flex; 
-   flex-direction: column; 
-   align-items: center; 
- } 
+<script setup>
+  import { ref, onMounted } from 'vue'
+  import { supabase } from './lib/supabaseClient'
 
- .content-section { 
-   display: flex; 
-   justify-content: space-between; 
-   width: 80%;  
-   margin-bottom: 20px;  
- } 
+  const countries = ref([])
 
- .container * { 
-   color: white; 
- } 
-</style>
+  async function getCountries() {
+    const { data } = await supabase.from('countries').select()
+    countries.value = data
+  }
+
+  onMounted(() => {
+    getCountries()
+  })
+  </script>
+
+
+
+
+<style>
+</style>      
