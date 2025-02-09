@@ -82,7 +82,7 @@ header {
   width: 100%;
   z-index: 1000;
   font-family: "Brush Script MT", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 nav {
@@ -98,7 +98,7 @@ nav {
   z-index: 999;
   backdrop-filter: blur(5px);
   font-family: Garamond, serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 nav a {
