@@ -4,14 +4,14 @@
       <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
     </ul>
    <br>
-  <personal-profile/> <br>
   <food-item/> 
   <food-item2/> 
-  <food-item/> 
+  <food-item3/> 
+  <personal-profile/> <br>
   
 </template>
 
-<script setup>
+<script>
   import { ref, onMounted } from 'vue'
   import { supabase } from './lib/supabaseClient'
 
