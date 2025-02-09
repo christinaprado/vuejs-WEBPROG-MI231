@@ -1,24 +1,34 @@
 <template>
-  <div>
-    <country />
-
-    <br>
-
-    <food-item/> 
-    <food-item2/> 
-    <personal-profile/> 
-  </div>
+  <h1>Food</h1>
+  <ul>
+      <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
+    </ul>
+   <br>
+  <food-item/> 
+  <food-item2/> 
+  <food-item3/> 
+  <personal-profile/> <br>
+  
 </template>
 
 <script setup>
-import Country from './components/Country.vue'
-import FoodItem from './components/FoodItem.vue'
-import FoodItem2 from './components/FoodItem2.vue'
-import PersonalProfile from './components/PersonalProfile.vue'
-</script>
+  import { ref, onMounted } from 'vue'
+  import { supabase } from './lib/supabaseClient'
+
+  const countries = ref([])
+
+  async function getCountries() {
+    const { data } = await supabase.from('countries').select()
+    countries.value = data
+  }
+
+  onMounted(() => {
+    getCountries()
+  })
+  </script>
+
+
+
 
 <style>
-body {
-  background: linear-gradient(135deg, #b33951, #d6758c, #e9a6b4, #f2d4d9, #ffffff);
-}
 </style>
