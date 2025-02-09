@@ -137,7 +137,7 @@ nav a:hover {
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: Garamond, serif;
 }
 
