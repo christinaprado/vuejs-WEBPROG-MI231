@@ -24,7 +24,7 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
+<style>
 
 .container {
   display: flex;
