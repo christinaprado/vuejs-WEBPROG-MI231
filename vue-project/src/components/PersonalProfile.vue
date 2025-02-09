@@ -108,7 +108,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffb5c0;
+  color: #e9a6b4;
 }
 
 .container {
