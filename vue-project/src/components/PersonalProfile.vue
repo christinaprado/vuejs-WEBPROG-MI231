@@ -82,7 +82,7 @@ header {
   width: 100%;
   z-index: 1000;
   font-family: "Brush Script MT", cursive;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 nav {
