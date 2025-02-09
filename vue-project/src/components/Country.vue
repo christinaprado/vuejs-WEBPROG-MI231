@@ -34,7 +34,7 @@
     max-width: 400px; /* Ensures list doesn't stretch too wide */
   }
   
-  h2 {
+  .h2 {
     font-size: 2rem;
     font-weight: bold;
     color: white;
