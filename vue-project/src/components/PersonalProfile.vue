@@ -44,6 +44,7 @@
         <h2>Resources</h2>
         <ul>
           <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+          <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
         </ul>
       </div>
     </div>
