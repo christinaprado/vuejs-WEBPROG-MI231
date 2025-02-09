@@ -98,7 +98,7 @@ nav {
   z-index: 999;
   backdrop-filter: blur(5px);
   font-family: Garamond, serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 nav a {
