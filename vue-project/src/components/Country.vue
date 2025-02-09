@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <h2>Food</h2>
+      <h2 class="food-title">Food</h2> <!-- Added class for better control -->
       <ul class="country-list">
         <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
       </ul>
@@ -14,12 +14,15 @@
   const countries = ref([])
   
   async function getCountries() {
-    const { data, error } = await supabase.from('countries').select()
-    
+    const { data, error } = await supabase.from('countries').select('*')
+  
     if (error) {
       console.error('Error fetching countries:', error.message)
     } else {
       console.log('Fetched countries:', data) // Debugging
+      if (data.length === 0) {
+        console.warn('No countries found in Supabase!')
+      }
       countries.value = data
     }
   }
@@ -31,30 +34,25 @@
   .container {
     text-align: left;
     padding: 20px;
-    max-width: 400px; /* Ensures list doesn't stretch too wide */
+    max-width: 400px;
   }
   
-  h2 {
+  .food-title { /* New class for h2 */
     font-size: 2rem;
     font-weight: bold;
+    color: white; /* This makes the text white */
+    text-align: center;
   }
   
   .country-list {
-    list-style-type: disc; /* Ensures proper bullet points */
-    padding-left: 20px; /* Aligns bullets properly */
-    font-size: 1.5rem; /* Makes list text proportional to heading */
-    font-family: Arial, sans-serif; /* Matches a clean font */
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
   }
   
   .country-list li {
-    margin: 5px 0; /* Adds spacing between items */
+    margin: 5px 0;
   }
-
-  .h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    padding: 10px;
-}
   </style>
   
