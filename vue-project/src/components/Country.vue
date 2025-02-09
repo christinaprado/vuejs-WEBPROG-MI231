@@ -34,10 +34,9 @@
     max-width: 400px; /* Ensures list doesn't stretch too wide */
   }
   
-  .h2 {
+  h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: white;
   }
   
   .country-list {
@@ -50,5 +49,12 @@
   .country-list li {
     margin: 5px 0; /* Adds spacing between items */
   }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
   </style>
   
