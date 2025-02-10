@@ -15,7 +15,7 @@
   import { ref, onMounted } from 'vue'
   import { supabase } from './lib/supabaseClient'
 
-  const getCountry = ref([])
+  const Country = ref([])
 
   async function getCountry() {
     const { data } = await supabase.from('country').select()
