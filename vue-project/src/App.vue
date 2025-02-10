@@ -19,7 +19,7 @@
 
   async function getCountry() {
     const { data } = await supabase.from('country').select()
-    countries.value = data
+    country.value = data
   }
 
   onMounted(() => {
