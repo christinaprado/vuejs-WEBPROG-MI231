@@ -6,7 +6,7 @@
    <br>
   <food-item/> 
   <food-item2/> 
-  <food-item/> 
+  <food-item3/> 
   <personal-profile/> <br>
   
 </template>
