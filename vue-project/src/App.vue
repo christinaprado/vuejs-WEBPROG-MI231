@@ -1,12 +1,12 @@
 <template>
   <h1>Food</h1>
   <ul>
-      <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
+      <li v-for="country in country" :key="country.id">{{ country.name }}</li>
     </ul>
    <br>
   <food-item/> 
   <food-item2/> 
-  <food-item3/> 
+  <food-item/> 
   <personal-profile/> <br>
   
 </template>
@@ -17,8 +17,8 @@
 
   const countries = ref([])
 
-  async function getCountries() {
-    const { data } = await supabase.from('countries').select()
+  async function getCountry() {
+    const { data } = await supabase.from('country').select()
     countries.value = data
   }
 
@@ -31,4 +31,4 @@
 
 
 <style>
-</style>
+</style> 
