@@ -23,7 +23,7 @@
   }
 
   onMounted(() => {
-    getCountries()
+    getCountry()
   })
   </script>
 
