@@ -25,59 +25,27 @@ onMounted(getComments)
 /* Apply styles to comment boxes */
 #app > div {
   border: dashed black 1px;
-  display: inline-block;
+  display: inline-block; /* Key change: Make them inline */
   margin: 10px;
   padding: 10px;
   background-color: lightcoral;
 }
 
 /* New styles for horizontal alignment */
-#app {
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center horizontally */
-}
-
-#app > div { /* Target direct children of #app */
-  display: flex;
-  flex-direction: column; /* Stack within each section */
-  align-items: center; /* Center horizontally within sections */
-  margin-bottom: 20px; /* Space between sections */
-}
-
-/* Style countries and fruits horizontally within their sections */
-.countries {
-  display: flex;
-  gap: 10px;
-}
-
-.fruits {
-  display: flex;
-  flex-direction: column; /* Stack fruits vertically */
-  align-items: center;
-}
-
-.fruit {
-  margin-bottom: 10px; /* Space between fruits */
-  text-align: center; /* Center text in fruits */
+#app {  /* Target the main app container */
+  display: flex;             /* Enable flexbox */
+  flex-wrap: wrap;         /* Allow wrapping to new lines if necessary */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start;  /* Align items to the top of the container */
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;           /* Remove default padding */
+  margin: 0;            /* Remove default margins */
 }
 
 li {
-  margin-bottom: 5px;
-}
-
-.comment-box {
-  width: 350px; /* Set a width for the comment box */
-}
-
-.comment {
-    width: 350px; /* Match comment box width */
-    text-align: left; /* Align comment text to the left */
+  margin-bottom: 5px;   /* Add some spacing between list items */
 }
 </style>
