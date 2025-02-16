@@ -6,51 +6,18 @@
   </template>
   
   <style>
-   /* Style for the "Leave a Comment" box */
-.comment-box {
-  background-color: maroon; /* Solid color background */
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  color: white;
-}
-
-/* Heading styles ("Leave a Comment" & "Comment") */
-.comment-box h2 {
-  font-family: "Brush Script MT", cursive;
-  font-size: 24px;
-}
-
-/* Label styles ("Name:", "Comment:") */
-.comment-box label {
-  font-family: Garamond, serif;
-  font-size: 18px;
-}
-
-/* Input fields */
-.comment-box input,
-.comment-box textarea {
-  width: 100%;
-  padding: 5px;
-  font-family: Garamond, serif;
-  font-size: 16px;
-}
-
-/* Submit button */
-.comment-box button {
-  background-color: #800020; /* Solid maroon color */
-  color: white;
-  border: none;
-  padding: 10px;
-  font-family: Garamond, serif;
-  font-size: 18px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.comment-box button:hover {
-  background-color: #5a0014; /* Darker shade for hover effect */
-}
+  <div class="comment-box">
+  <h2>Leave a Comment</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" rows="4" required></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
   </style>
 
