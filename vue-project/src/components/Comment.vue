@@ -9,7 +9,7 @@
       <textarea id="comment" placeholder="Your comment"></textarea>
       <button>Submit</button>
     </div>
-
+  </div>
 </template>
 
 <script setup>
@@ -63,28 +63,5 @@ onMounted(() => {
   color: #800020;
   border: none;
   cursor: pointer;
-}
-
-/* Fact Boxes */
-.fact-boxes {
-  display: flex;
-  gap: 20px;
-}
-
-.box {
-  background-color: #800020;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  min-width: 150px;
-}
-
-/* Countries */
-.countries {
-  display: flex;
-  gap: 20px;
-  font-size: 18px;
-  font-weight: bold;
 }
 </style>
