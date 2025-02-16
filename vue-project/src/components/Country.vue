@@ -3,7 +3,7 @@
     <div v-if="loading">Loading...</div>
     <div v-else-if="error">Error: {{ error }}</div>
     <ul v-else>
-      <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
+        <li v-for="(country, index) in countries" :key="index">{{ country.name }}</li>
     </ul>
   </template>
   
