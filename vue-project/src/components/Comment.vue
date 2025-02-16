@@ -1,18 +1,16 @@
 <template>
-  <div class="container">
-    <div class="comment-box">
-      <h2>Leave a Comment</h2> 
-      <form @submit.prevent="submitComment">
-        <label for="name">Name:</label>
-        <input type="text" id="name" v-model="name" required />
-        <label for="comment">Comment:</label>
-        <textarea id="comment" v-model="comment" rows="4" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-
-    <h1>Comments</h1>
+  <div class="comment-box">
+    <h2>Leave a Comment</h2> 
+    <form @submit.prevent="submitComment">
+      <label for="name">Name:</label>
+      <input type="text" id="name" v-model="name" required />
+      <label for="comment">Comment:</label>
+      <textarea id="comment" v-model="comment" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </div>
+
+  <h1 class="comments-heading">Comments</h1>
 </template>
 
 <script setup>
@@ -62,19 +60,8 @@ onMounted(() => {
 </script>
 
 <style>
-/* Center the entire content */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-
-/* Comment Box */
 .comment-box {
-  background-color: maroon;
+  background-color: #600000;
   padding: 20px;
   border-radius: 15px;
   width: 80%;
@@ -82,9 +69,9 @@ onMounted(() => {
   color: white;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
   text-align: center;
+  margin: auto;
 }
 
-/* Style for input fields */
 .comment-box input,
 .comment-box textarea {
   width: 100%;
@@ -95,7 +82,6 @@ onMounted(() => {
   margin-bottom: 10px;
 }
 
-/* Submit button style */
 .comment-box button {
   background-color: #800020;
   color: white;
@@ -108,25 +94,13 @@ onMounted(() => {
 }
 
 .comment-box button:hover {
-  background-color: #800020;
+  background-color: #600000;
 }
 
-/* Comment List */
-.comment-list {
-  list-style: none;
-  padding: 0;
-  width: 80%;
-  max-width: 600px;
-  text-align: left;
-}
-
-/* Footer Styling */
-.footer {
-  margin-top: 40px;
-  padding: 10px;
-  background-color: #800020;
-  color: white;
-  width: 100%;
+.comments-heading {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 </style>
