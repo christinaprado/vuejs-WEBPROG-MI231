@@ -6,14 +6,52 @@
   </template>
   
   <style>
-    #app > div {
-      border: dashed whitesmoke 1px;
-      display: inline-block;
-      margin: 10px;
-      padding: 10px;
-      background-color: #800020;
-      font-family: Garamond, serif;
-    }
+   /* Style for the "Leave a Comment" box */
+.comment-box {
+  background-color: maroon; /* Solid color background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  color: white;
+}
+
+/* Heading styles ("Leave a Comment" & "Comment") */
+.comment-box h2 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 24px;
+}
+
+/* Label styles ("Name:", "Comment:") */
+.comment-box label {
+  font-family: Garamond, serif;
+  font-size: 18px;
+}
+
+/* Input fields */
+.comment-box input,
+.comment-box textarea {
+  width: 100%;
+  padding: 5px;
+  font-family: Garamond, serif;
+  font-size: 16px;
+}
+
+/* Submit button */
+.comment-box button {
+  background-color: #800020; /* Solid maroon color */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-family: Garamond, serif;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.comment-box button:hover {
+  background-color: #5a0014; /* Darker shade for hover effect */
+}
+
   </style>
 
 <script setup>
