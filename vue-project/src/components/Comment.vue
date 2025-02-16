@@ -60,17 +60,7 @@ onMounted(() => {
 </script>
 
 <style>
-.comment-box {
-  background-color: #600000;
-  padding: 20px;
-  border-radius: 15px;
-  width: 80%;
-  max-width: 600px;
-  color: white;
-  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-  text-align: center;
-  margin: auto;
-}
+
 
 .comment-box input,
 .comment-box textarea {
