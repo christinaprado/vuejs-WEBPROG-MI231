@@ -9,7 +9,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { supabase } from '../lib/supabaseClient'
+import { supabase } from '@/lib/supabaseClient.js'
 
 const comments = ref([])
 
@@ -26,7 +26,7 @@ getComments()
 
 
 <style>
-#app > div {
+ div {
   border: dashed black 1px;
   display: inline-block;
   margin: 10px;
