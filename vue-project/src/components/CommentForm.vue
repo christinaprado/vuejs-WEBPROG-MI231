@@ -21,7 +21,7 @@
   
   <script setup>
   import { ref } from 'vue';
-  import { supabase } from '@supabaseClient'
+  import { supabase } from '@/lib/supabaseClient.js'
 
   
   const name = ref('');
