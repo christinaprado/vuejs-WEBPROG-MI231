@@ -1,23 +1,30 @@
 <template>
-  <div class="comment-box">
-    <h2>Leave a Comment</h2>
-    <form @submit.prevent="submitComment">
-      <label for="name">Name:</label>
-      <input type="text" id="name" v-model="name" required />
+  <div class="container">
+    <div class="comment-box">
+      <h2>Leave a Comment</h2>
+      <form @submit.prevent="submitComment">
+        <label for="name">Name:</label>
+        <input type="text" id="name" v-model="name" required />
 
-      <label for="comment">Comment:</label>
-      <textarea id="comment" v-model="comment" rows="4" required></textarea>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" v-model="comment" rows="4" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <h1>Comments</h1>
+    <ul class="comment-list">
+      <li v-for="comment in comments" :key="comment.id">
+        <strong>{{ comment.name }}</strong>: {{ comment.comment }}
+      </li>
+    </ul>
+
+    <!-- Footer Below Comment Box -->
+    <footer class="footer">
+      <p>© 2025 Christina Prado. All Rights Reserved.</p>
+    </footer>
   </div>
-
-  <h1>Comments</h1>
-  <ul>
-    <li v-for="comment in comments" :key="comment.id">
-      <strong>{{ comment.name }}</strong>: {{ comment.comment }}
-    </li>
-  </ul>
 </template>
 
 <script setup>
@@ -67,26 +74,26 @@ onMounted(() => {
 </script>
 
 <style>
-/* Target only the comment box */
+/* Center the entire content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Comment Box */
 .comment-box {
-  background-color: maroon; /* Solid color */
+  background-color: maroon;
   padding: 20px;
   border-radius: 15px;
   width: 80%;
   max-width: 600px;
-  margin: 20px auto;
   color: white;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
   text-align: center;
-}
-
-/* Style for labels */
-.comment-box label {
-  font-family: Garamond, serif;
-  font-size: 18px;
-  display: block;
-  text-align: left;
-  margin: 5px 0;
 }
 
 /* Style for input fields */
@@ -94,7 +101,6 @@ onMounted(() => {
 .comment-box textarea {
   width: 100%;
   padding: 10px;
-  font-family: Garamond, serif;
   font-size: 16px;
   border-radius: 8px;
   border: none;
@@ -103,11 +109,10 @@ onMounted(() => {
 
 /* Submit button style */
 .comment-box button {
-  background-color: #800020; /* Solid maroon color */
+  background-color: #800020;
   color: white;
   border: none;
   padding: 10px;
-  font-family: Garamond, serif;
   font-size: 18px;
   cursor: pointer;
   width: 100%;
@@ -115,14 +120,26 @@ onMounted(() => {
 }
 
 .comment-box button:hover {
-  background-color: #5a0014; /* Darker shade for hover effect */
+  background-color: #5a0014;
 }
 
-/* Remove border from the main div */
-#app > div {
-  border: none;
-  display: inline-block;
-  margin: 10px;
+/* Comment List */
+.comment-list {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: 40px;
   padding: 10px;
+  background-color: maroon;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
 }
 </style>
