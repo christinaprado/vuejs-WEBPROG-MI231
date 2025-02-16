@@ -1,6 +1,8 @@
 <template>
-    <h1>Food</h1>  
-    <ul>
+    <h1>Food</h1>
+    <div v-if="loading">Loading...</div>
+    <div v-else-if="error">Error: {{ error }}</div>
+    <ul v-else>
       <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
     </ul>
   </template>
@@ -9,11 +11,29 @@
   import { ref, onMounted } from 'vue'
   import { supabase } from './lib/supabaseClient.js'
   
-  const countries = ref([]) // Use 'countries' for the ref variable (plural)
+  const countries = ref([])
+  const loading = ref(true)
+  const error = ref(null)
   
   async function getCountries() {
-    const { data } = await supabase.from('country').select() // 'country' is the table name
-    countries.value = data
+    loading.value = true // Set loading to true before fetching
+    error.value = null   // Clear any previous errors
+  
+    try {
+      const { data, error: err } = await supabase.from('country').select()
+  
+      if (err) {
+        error.value = err.message // Set the error message
+        console.error("Error fetching countries:", err) // Log the error for debugging
+      } else {
+        countries.value = data
+      }
+    } catch (err) {
+      error.value = err.message || "An unexpected error occurred."
+      console.error("Unexpected error:", err)
+    } finally {
+      loading.value = false // Set loading to false after fetch, regardless of success/failure
+    }
   }
   
   onMounted(() => {
