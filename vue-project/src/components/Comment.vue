@@ -1,29 +1,17 @@
 <template>
   <div class="container">
     <div class="comment-box">
-      <h2 v-if="!isInsideCommentBox">Leave a Comment</h2>
+      <h2>Leave a Comment</h2> 
       <form @submit.prevent="submitComment">
         <label for="name">Name:</label>
         <input type="text" id="name" v-model="name" required />
-
         <label for="comment">Comment:</label>
         <textarea id="comment" v-model="comment" rows="4" required></textarea>
-
         <button type="submit">Submit</button>
       </form>
     </div>
 
     <h1>Comments</h1>
-    <ul class="comment-list">
-      <li v-for="comment in comments" :key="comment.id">
-        <strong>{{ comment.name }}</strong>: {{ comment.comment }}
-      </li>
-    </ul>
-
-    <!-- Footer Below Comment Box -->
-    <footer class="footer">
-      <p>© 2025 Christina Prado. All Rights Reserved.</p>
-    </footer>
   </div>
 </template>
 
