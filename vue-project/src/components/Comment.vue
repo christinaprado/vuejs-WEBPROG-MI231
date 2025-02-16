@@ -6,19 +6,14 @@
   </template>
   
   <style>
-  <div class="comment-box">
-  <h2>Leave a Comment</h2>
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="comment">Comment:</label>
-    <textarea id="comment" name="comment" rows="4" required></textarea>
-    
-    <button type="submit">Submit</button>
-  </form>
-</div>
-
+    #app > div {
+      border: dashed whitesmoke 1px;
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      background-color: #800020;
+      
+    }
   </style>
 
 <script setup>
