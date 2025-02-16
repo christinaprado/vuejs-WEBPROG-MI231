@@ -28,6 +28,6 @@ onMounted(getComments)
   display: inline-block;
   margin: 10px;
   padding: 10px;
-  background-color: transparent;
+  background-color: lightcoral;
 }
 </style>
