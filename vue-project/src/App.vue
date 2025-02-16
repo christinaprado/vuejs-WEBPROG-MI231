@@ -4,6 +4,7 @@
   <food-item/>
   <food-item2/>
   <food-item3/>
+  <personal-profile/>
   <comment-form/>
   <comment/>
    
