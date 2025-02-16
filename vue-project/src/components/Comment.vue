@@ -10,27 +10,6 @@
       <button>Submit</button>
     </div>
 
-    <!-- Fact Boxes -->
-    <div class="fact-boxes">
-      <div class="box">Apples <br /> I like apples</div>
-      <div class="box">Blueberries <br /> I like Blueberries</div>
-      <div class="box">Grapes <br /> I like grapes</div>
-    </div>
-
-    <!-- Countries -->
-    <div class="countries">
-      <p>Canada</p>
-      <p>United States</p>
-      <p>Mexico</p>
-    </div>
-  </div>
-
-  <h1>Comments</h1>
-  <ul>
-    <li v-for="comment in comments" :key="comment.id">
-      {{ comment.name }}: {{ comment.comment }}
-    </li>
-  </ul>
 </template>
 
 <script setup>
