@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="comment-box">
-      <h2>Leave a Comment</h2>
+      <h2 v-if="!isInsideCommentBox">Leave a Comment</h2>
       <form @submit.prevent="submitComment">
         <label for="name">Name:</label>
         <input type="text" id="name" v-model="name" required />
@@ -120,7 +120,7 @@ onMounted(() => {
 }
 
 .comment-box button:hover {
-  background-color: #5a0014;
+  background-color: #800020;
 }
 
 /* Comment List */
@@ -136,7 +136,7 @@ onMounted(() => {
 .footer {
   margin-top: 40px;
   padding: 10px;
-  background-color: maroon;
+  background-color: #800020;
   color: white;
   width: 100%;
   text-align: center;
