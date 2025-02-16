@@ -73,7 +73,6 @@
   
   .btn {
     padding: 0.5rem 1rem;
-    background-color: #800020;
     color: white;
     border: none;
     border-radius: 4px;
