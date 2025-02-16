@@ -74,6 +74,7 @@
   .btn {
     padding: 0.5rem 1rem;
     color: white;
+    
     border: none;
     border-radius: 4px;
     cursor: pointer;
