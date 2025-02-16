@@ -6,7 +6,8 @@ import FoodItem2 from './components/FoodItem2.vue'
 import FoodItem3 from './components/FoodItem3.vue'
 import PersonalProfile from './components/PersonalProfile.vue'
 import Comment from './components/Comment.vue'
-import Commentform from './components/CommentForm.vue'  // Wrong casing
+import CommentForm from './components/CommentForm.vue'
+
 
 const app = createApp(App)
 
