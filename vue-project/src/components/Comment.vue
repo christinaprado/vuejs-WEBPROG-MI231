@@ -1,16 +1,3 @@
-<template>
-  <div class="container">
-    <!-- Comment Box -->
-    <div class="comment-box">
-      <h2>Leave a Comment</h2>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Your name" />
-      <label for="comment">Comment:</label>
-      <textarea id="comment" placeholder="Your comment"></textarea>
-      <button>Submit</button>
-    </div>
-  </div>
-</template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
