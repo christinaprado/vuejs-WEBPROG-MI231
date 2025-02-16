@@ -128,6 +128,5 @@ onMounted(() => {
   color: white;
   width: 100%;
   text-align: center;
-  border-radius: 8px;
 }
 </style>
