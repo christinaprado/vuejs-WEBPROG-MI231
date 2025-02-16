@@ -31,3 +31,22 @@
     <p>I like grapes</p>
   </div>
 </template>
+
+<style>
+/* Keep the color for only these specific boxes */
+.fact-box, .comment-box {
+  background-color: #800020;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Remove background color for all other divs */
+#app > div:not(.fact-box):not(.comment-box) {
+  background-color: transparent;
+}
+</style>
