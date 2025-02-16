@@ -9,7 +9,7 @@
   
   <script setup>
   import { ref, onMounted } from 'vue'
-  import { supabase } from './lib/supabaseClient.js'
+  import { supabase } from '@supabaseClient'
   
   const countries = ref([])
   const loading = ref(true)
