@@ -1,14 +1,21 @@
 <template>
-  <div class="container">
-    <h1>Comments</h1>
-    <ul v-if="comments.length > 0">
-      <li v-for="comment in comments" :key="comment.id">
-        <strong>{{ comment.name }}:</strong> {{ comment.comment }}
-      </li>
-    </ul>
-    <p v-else>No comments yet.</p>
-  </div>
+  <h1>Comments</h1>
+  <ul>
+    <li v-for="comment in comments" :key="comment.id">{{ comment.name }} {{ comment.comment }}</li>
+  </ul>
 </template>
+
+<script></script>
+
+<style>
+  #app > div {
+    border: dashed black 1px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    
+  }
+</style>
 
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -16,43 +23,24 @@ import { supabase } from '@/lib/supabaseClient.js'
 
 const comments = ref([])
 
-const getComments = async () => {
-  try {
-    const { data, error } = await supabase.from('comments').select()
-    if (error) throw error
-    comments.value = data || []
-  } catch (err) {
-    console.error('Error fetching comments:', err.message)
-  }
+async function getComments() {
+const { data } = await supabase.from('comments').select()
+comments.value = data
 }
 
-onMounted(getComments)
+onMounted(() => {
+getComments()
+})
+
 </script>
 
+
 <style>
-/* Container */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-/* Comment List */
-ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  max-width: 400px;
-}
-
-li {
-  background-color: #800020;
-  color: white;
+#app > div {
+  border: dashed black 1px;
+  display: inline-block;
+  margin: 10px;
   padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  background-color: lightyellow;
 }
 </style>
