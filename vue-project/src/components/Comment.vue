@@ -1,20 +1,11 @@
 <template>
-  <div class="container">
-    <h1>Comments</h1>
-    <ul>
-      <li v-for="comment in comments" :key="comment.id">{{ comment.name }} {{ comment.comment }}</li>
-    </ul>
-    <!-- Comment Box -->
-    <div class="comment-box">
-      <h2>Leave a Comment</h2>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Your name" />
-      <label for="comment">Comment:</label>
-      <textarea id="comment" placeholder="Your comment"></textarea>
-      <button>Submit</button>
-    </div>
-  </div>
+  <div class="comment-box"></div>
+  <h1>Comments</h1>
+  <ul>
+    <li v-for="comment in comments" :key="comment.id">{{ comment.name }} {{ comment.comment }}</li>
+  </ul>
 </template>
+
 
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -34,7 +25,7 @@ onMounted(() => {
 
 <style>
 /* Center everything */
-.container {
+.div {
   display: flex;
   flex-direction: column;
   align-items: center;
