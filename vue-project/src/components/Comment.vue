@@ -24,8 +24,15 @@ import { supabase } from '../lib/supabaseClient.js'
 const comments = ref([])
 
 async function getComments() {
-  const { data } = await supabase.from('comments').select()
-  comments.value = data
+  const { data, error } = await supabase.from('comments').select()
+  
+  if (error) {
+    console.error("Error fetching comments:", error) // Logs any errors
+  } else {
+    console.log("Fetched comments:", data) // Logs retrieved comments
+  }
+
+  comments.value = data || [] // Ensures `comments.value` is never undefined
 }
 
 onMounted(() => {
