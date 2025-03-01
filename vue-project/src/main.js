@@ -7,6 +7,7 @@ import FoodItem3 from './components/FoodItem3.vue'
 import PersonalProfile from './components/PersonalProfile.vue'
 import Comment from './components/Comment.vue'
 import CommentForm from './components/CommentForm.vue'
+import RestApi from './components/RestApi.vue'
 
 
 const app = createApp(App)
@@ -17,5 +18,6 @@ app.component('food-item3', FoodItem3)
 app.component('personal-profile', PersonalProfile)
 app.component('comment', Comment)
 app.component('comment-form', CommentForm) // `CommentForm` is undefined
+app.component('rest-api', RestApi)
 
 app.mount('#app')

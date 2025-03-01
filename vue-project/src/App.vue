@@ -6,6 +6,7 @@
   <personal-profile/>
   <comment-form/>
   <comment/>
+  <rest-api/>
    
 
 </template>
@@ -18,4 +19,5 @@ import FoodItem3 from './components/FoodItem3.vue'
 import PersonalProfile from './components/PersonalProfile.vue'
 import CommentForm from './components/CommentForm.vue'
 import Comment from './components/Comment.vue'
+import RestApi from './components/RestApi.vue'
 </script>
